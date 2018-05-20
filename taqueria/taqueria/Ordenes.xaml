@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="taqueria.Ordenes"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="FillAndExpand">
+            <AbsoluteLayout>
+                <ffimageloading:CachedImage 
+                   x:Name="BgImageOrdenes" 
+                   Source="FondoOrden2.jpg"
+                    Aspect="AspectFill"
+                   AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                   AbsoluteLayout.LayoutFlags="All"/>
+
+                <StackLayout
+                    Orientation="Vertical"
+                    Margin="0"
+                    Padding="0"
+                    Spacing="0"
+                    AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="FillAndExpand">
+
+                    <StackLayout
+                        Orientation="Horizontal"
+                        BackgroundColor="#135fbd"
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="55">
+
+                        <Button
+                            x:Name="BtnBackOrdenes"
+                            Text="Regresar"
+                            CornerRadius="5"
+                            BackgroundColor="#009A00"
+                            TextColor="White"
+                            FontSize="18"
+                            Margin="6"
+                            />
+
+                        <Label Text="Mis Ordenes"
+                               TextColor="White"
+                               FontSize="25"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"
+                           />
+
+                    </StackLayout>
+
+                    <ScrollView
+                        BackgroundColor="Transparent"
+                        Margin="0"
+                        Orientation="Vertical"
+                        HorizontalOptions="FillAndExpand">
+
+                        <StackLayout
+                            BackgroundColor="Transparent"
+                            HorizontalOptions="FillAndExpand"
+                            Padding="0"
+                            Spacing="5"
+                            Orientation="Vertical">
+                            <!-- Carousel de Ofertas-->
+                            <StackLayout
+                                BackgroundColor="#F35E00"
+                                Margin="10"
+                                Spacing="0"
+                                Padding="10,5,10,5"
+                                HorizontalOptions="FillAndExpand"
+                                Orientation="Vertical"
+                                HeightRequest="250">
+                                <!--Titulo Mis Promociones-->
+                                <Label
+                                    Text="Mis Promociones"
+                                    TextColor="White"
+                                    FontSize="21"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"
+                                    HorizontalOptions="FillAndExpand"
+                                    Margin="10,5,10,10"/>
+                                <!--Carousel Imagenes de Ofertas-->
+                                <cv:CarouselView
+                                    x:Name="Promos">
+                                    <cv:CarouselView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <Image Grid.RowSpan="2" Aspect="AspectFill" Source="{Binding .}"/>
+                                                <StackLayout 
+                                                    Grid.Row="1" 
+                                                    BackgroundColor="#80000000" 
+                                                    Padding="12">
+                                                    <Label 
+                                                        TextColor="White" 
+                                                        Text="En tu Siguiente Orden en el Local" 
+                                                        FontSize="16" 
+                                                        HorizontalOptions="Center" 
+                                                        VerticalOptions="CenterAndExpand"/>
+                                                </StackLayout>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </cv:CarouselView.ItemTemplate>
+                                </cv:CarouselView>
+                            </StackLayout>
+                            
+                            <!-- Titulo Mis Compras-->
+                            <StackLayout
+                                BackgroundColor="#F35E00"
+                                Margin="10,0,10,0"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand"
+                                Orientation="Vertical">
+                                <Label
+                                    Text="Mis Compras"
+                                    TextColor="White"
+                                    FontSize="21"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"
+                                    HorizontalOptions="FillAndExpand"/>
+                            </StackLayout>
+                            <!-- Compras Hechas-->
+                            <StackLayout
+                                x:Name="ordenes"
+                                BackgroundColor="#F35E00"
+                                Margin="10,0,10,0"
+                                Padding="10,5,10,10" 
+                                HorizontalOptions="FillAndExpand"
+                                Orientation="Vertical">
+                               
+                                        <Label 
+                                            x:Name="orden1"
+                                        Text=""
+                                        TextColor="White"
+                                        VerticalTextAlignment="Center"
+                                        HorizontalTextAlignment="Center"
+                                        FontSize="21"
+                                        Margin="0"/>
+                                            <StackLayout
+                                        Margin="0"
+                                        Spacing="15"
+                                        BackgroundColor="Transparent"
+                                        Orientation="Horizontal"
+                                        HorizontalOptions="FillAndExpand">
+                                                <Label 
+                                                    x:Name="sucursal1"
+                                            Text=""
+                                            TextColor="White"
+                                            FontSize="16"
+                                            HorizontalOptions="StartAndExpand"/>
+
+                                                <Label
+                                             x:Name="total1"
+                                            Text=""
+                                            HorizontalOptions="EndAndExpand"
+                                            TextColor="White"
+                                            FontSize="16"/>
+                                            </StackLayout>
+                                            <Label 
+                                                x:Name="fecha1"
+                                        Text=""
+                                        TextColor="White"
+                                        FontSize="16"
+                                        HorizontalOptions="StartAndExpand"/>
+                                            <!--Lista de la orden-->
+                                            <StackLayout
+                                        BackgroundColor="GhostWhite"
+                                        Margin="10,10,10,0">
+                                                <ListView 
+                                            x:Name="listOrden">
+                                                    <ListView.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <ViewCell>
+                                                                
+                                                                <!--          -->
+                                                                <StackLayout
+                                                                    Orientation="Horizontal"
+                                                                    Padding="10,0,10,0"
+                                                                    Spacing="0"
+                                                                    VerticalOptions="CenterAndExpand">
+                                                                    <Label
+                                                                        Text="{Binding descripcion}"
+                                                                        TextColor="Black"
+                                                                        FontSize="16"
+                                                                        VerticalTextAlignment="Center"
+                                                                        HorizontalTextAlignment="Center"
+                                                                        HorizontalOptions="StartAndExpand"/>
+                                                                    <Label
+                                                                        Text="{Binding cantidad}"
+                                                                        TextColor="Black"
+                                                                        FontSize="16"
+                                                                        VerticalTextAlignment="Center"
+                                                                        HorizontalTextAlignment="Center"
+                                                                        HorizontalOptions="EndAndExpand"/>
+                                                                </StackLayout>
+                                                                <!--          -->
+                                                            </ViewCell>
+                                                        </DataTemplate>
+                                                    </ListView.ItemTemplate>
+                                                </ListView>
+                                            </StackLayout>
+                                            <!--Codigo QR de Orden-->
+                                        <StackLayout
+                                        BackgroundColor="White"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        Margin="0,10,0,0"
+                                        Padding="20">
+                                            <ffimageloading:CachedImage
+                                            Source="QRCode.png"
+                                            Aspect="AspectFill"
+                                            WidthRequest="100"
+                                            HeightRequest="100"
+                                            />
+                                        </StackLayout>
+                                  
+                                <!--                    -->
+                            </StackLayout>
+
+                        </StackLayout>
+                    </ScrollView>
+
+                </StackLayout>
+
+            </AbsoluteLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
