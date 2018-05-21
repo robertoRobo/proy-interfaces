@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "83a7a5f64291fb4744ed7b400edf6cdac9c3876d"
+    "signature": "a1795eecf9a9f83ff5edd0a0288f13ec052ef3a1"
   },
   "compilationOptions": {},
   "targets": {
@@ -16,7 +16,9 @@
           "Xamarin.FFImageLoading.Forms": "2.3.6",
           "Xamarin.Forms": "2.5.1.527436",
           "Xamarin.Forms.CarouselView": "2.3.0-pre2",
-          "Xamarin.Forms.Maps": "2.5.0.280555"
+          "Xamarin.Forms.Maps": "2.5.0.280555",
+          "ZXing.Net.Mobile": "2.4.1",
+          "ZXing.Net.Mobile.Forms": "2.4.1"
         },
         "runtime": {
           "taqueria.dll": {}
@@ -90,6 +92,22 @@
         },
         "runtime": {
           "lib/netstandard1.0/Xamarin.Forms.Maps.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile/2.4.1": {
+        "runtime": {
+          "lib/netstandard1.0/ZXing.Net.Mobile.Core.dll": {},
+          "lib/netstandard1.0/ZXingNetMobile.dll": {},
+          "lib/netstandard1.0/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.4.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.5.1.527436",
+          "ZXing.Net.Mobile": "2.4.1"
+        },
+        "runtime": {
+          "lib/netstandard1.0/ZXing.Net.Mobile.Forms.dll": {}
         }
       }
     }
@@ -183,6 +201,20 @@
       "sha512": "sha512-HDXRiNVORaOJE6n+jKtLsThTzqaKa9xDd90CZxbJ0Y8X2sfheWh2QB5J2SC56I4lMqzyN3aOkbPXP/37IS0GMQ==",
       "path": "xamarin.forms.maps/2.5.0.280555",
       "hashPath": "xamarin.forms.maps.2.5.0.280555.nupkg.sha512"
+    },
+    "ZXing.Net.Mobile/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iCL2WcqOyUnC1iFFdzXijk0EXfoLMDqW88MyhoTZigSyhJZM2C5hKgSZVyfx9E35tgkde/IZwHkk8cVDnbQlYg==",
+      "path": "zxing.net.mobile/2.4.1",
+      "hashPath": "zxing.net.mobile.2.4.1.nupkg.sha512"
+    },
+    "ZXing.Net.Mobile.Forms/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7z+MfL8TbfE36s1GGvrnlkhLUOV5dgdn1gYhUb3GU2W6YXzpfF39k6EqkmFsyNm1O07evTaKFgh7UTOqcWub3g==",
+      "path": "zxing.net.mobile.forms/2.4.1",
+      "hashPath": "zxing.net.mobile.forms.2.4.1.nupkg.sha512"
     }
   }
 }
