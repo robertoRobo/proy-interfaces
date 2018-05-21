@@ -13,12 +13,12 @@ namespace taqueria
 {
 	public partial class MainPage : ContentPage
 	{
-        string id;
+  
         string idPhone1;
         public MainPage(string idPhone)
         {
-            id = "8";
-            new restClient().inserUser(Int32.Parse(id));
+            
+            //new restClient().inserUser(id);
             idPhone1 = idPhone; 
             InitializeComponent();
             //id = idPhone;
@@ -31,13 +31,13 @@ namespace taqueria
 
         private void BtnPaLevar_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("code",idPhone1,"aceptar");
-           // Navigation.PushAsync(new PaLlevar1());
+            //DisplayAlert("code",idPhone1,"aceptar");
+            Navigation.PushAsync(new PaLlevar1());
         }
 
         private void BtnOrdenes_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Ordenes(id));
+            Navigation.PushAsync(new Ordenes(idPhone1));
         }
 
         private void BtnSucursales_Clicked(object sender, EventArgs e)

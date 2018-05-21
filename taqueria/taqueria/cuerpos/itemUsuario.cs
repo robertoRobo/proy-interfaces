@@ -6,6 +6,6 @@ namespace scanner.cuerpos
 {
     class itemUsuario
     {
-        public int idUsuario { get; set;}
+        public string idUsuario { get; set;}
     }
 }

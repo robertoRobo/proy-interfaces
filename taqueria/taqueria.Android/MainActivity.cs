@@ -36,8 +36,7 @@ namespace taqueria.Droid
             //IMEI number  
             String m_deviceId = mTelephonyMgr.DeviceId;
             var usuarios = new HealthGateway().UserName;
-            usuario = new restClient().inserUser();
-            new HealthGateway().SaveCredentials(usuario, "pass");
+            
             if (usuarios == null)
             {
                 //usuario = "10";
@@ -46,7 +45,7 @@ namespace taqueria.Droid
             }
             else {
 
-                usuario = "existe la pass: "+usuarios;
+                usuario = usuarios;
             }
             LoadApplication(application: new App(usuario));
 

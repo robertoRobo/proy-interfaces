@@ -17,7 +17,7 @@ namespace taqueria
 	public partial class Ordenes : ContentPage
 	{
         private ObservableCollection<OrdenModel> order { get; set; }
-        int identificador_telefono;
+        string identificador_telefono;
         ZXingBarcodeImageView barcode;
         //restClient cliente = new restClient();
         List<orden> resp;
@@ -25,7 +25,7 @@ namespace taqueria
         
         public Ordenes (string id)
 		{
-            identificador_telefono = Int32.Parse(id);
+            identificador_telefono = id;
 			InitializeComponent ();
            
             order = new ObservableCollection<OrdenModel>();

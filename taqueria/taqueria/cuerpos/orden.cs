@@ -7,7 +7,7 @@ namespace scanner.cuerpos
     class orden
     {
         public int num_orden { get; set; }
-        public int id_usuario { get; set; }
+        public string id_usuario { get; set; }
         public int id_sucursal { get; set; }
         public string descripcion { get; set; }
         public int total { get; set; }
