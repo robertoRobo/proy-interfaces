@@ -15,6 +15,7 @@ C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\o
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\System.Core.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\System.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\System.IdentityModel.dll
+C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\System.Json.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\System.Net.Http.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\System.Net.Http.Extensions.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\System.Net.Http.Primitives.dll
@@ -29,6 +30,7 @@ C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\o
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.Core.UI.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.Core.Utils.dll
+C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.CustomTabs.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.Fragment.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.Media.Compat.dll
@@ -40,6 +42,7 @@ C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\o
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.Palette.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Auth.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Forms.CarouselView.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Forms.Maps.Android.dll

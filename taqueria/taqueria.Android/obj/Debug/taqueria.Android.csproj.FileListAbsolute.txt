@@ -170,9 +170,11 @@ C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\o
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\RobertoVR\Desktop\app\Tacos Tito\Tacos Tito\taqueria\taqueria.Android\bin\Debug\taqueria.Android.dll
+bin\Debug\System.Json.pdb
 obj\Debug\linksrc\taqueria.Android.dll.mdb
 obj\Debug\linksrc\FormsViewGroup.dll.mdb
 obj\Debug\linksrc\Xamarin.Forms.Core.dll.mdb
 obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 obj\Debug\linksrc\Xamarin.Forms.Xaml.dll.mdb
+obj\Debug\linksrc\System.Json.pdb
 obj\Debug\linksrc\taqueria.pdb

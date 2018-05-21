@@ -52,3 +52,5 @@ zxing.portable
 ZXingNetMobile
 ZXing.Net.Mobile.Forms.Android
 ZXing.Net.Mobile.Forms
+Xamarin.Android.Support.CustomTabs
+Xamarin.Auth

@@ -22,6 +22,12 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
+    <activity android:label="Web Authenticator" android:name="md5719e249934bca077b67d8f77dc6da002.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md5719e249934bca077b67d8f77dc6da002.WebAuthenticatorActivity" />
+    <activity android:label="@string/title_activity_webview" android:theme="@android:style/Theme.DeviceDefault" android:name="md5719e249934bca077b67d8f77dc6da002.WebViewActivity" />
+    <activity android:label="Web Authenticator Native Broswer" android:launchMode="singleTop" android:name="md5719e249934bca077b67d8f77dc6da002.WebAuthenticatorNativeBrowserActivity" />
+    <receiver android:name="md5719e249934bca077b67d8f77dc6da002.CustomTabsActionsBroadcastReceiver" />
     <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md54ac47efa3340b2f00c939eadd8c37639.ZxingActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.taqueria.mono.MonoRuntimeProvider.__mono_init__" />
     <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
